@@ -8,14 +8,14 @@ function ryanwagkangsusuko() {
 
   //if the given is complete
   if (a1 && n && d ) {
-    //alert("kumpleto ang mga gago");
     var arithmetic = a1 + (n-1) * d;
     alert(arithmetic);
   }
+  //if all the input is blank
   else if (isNaN(an,a1,n,d)) {
-    alert("baka gusto mo maglagay");
+    alert("Please fill up the blanks");
   }
-  //if the given dont have a1
+  //if the given dont have a1 and coommon difference
   else if (isNaN(a1,d)) {
     var inputotherterm = prompt("If the given has no a1, then enter the other term. ex: if a5 then enter 5");
     if (inputotherterm === null) {
@@ -37,12 +37,12 @@ function ryanwagkangsusuko() {
   }
   //if the given dont have nth term.
   else if (isNaN(n)) {
-    //alert("walang n word");
     var hinahanapsin = a1-d;
     var hinahanapsin1 = an - hinahanapsin;
     var hinahanapsin2 = hinahanapsin1 / d;
     alert("N = " + hinahanapsin2);
   }
+  //if the given dont have common difference.
   else if (isNaN(d)) {
     var hinahanapsid = an-a1;
     var hinahanapsid1 = n-1;
